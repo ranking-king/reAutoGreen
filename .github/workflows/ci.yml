@@ -16,8 +16,8 @@ jobs:
 
       - name: Auto green
         run: |
-          git config --local user.email "jigongdeshanzhihao126.com"
-          git config --local user.name "Ran"
+          git config --local user.email "jigongdeshanzhihao@126.com"
+          git config --local user.name "ranking-king"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
           git commit --allow-empty -m "每天撸一撸 精神后半生"
